@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvellous Michaels Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family:'Roboto', sans-serif;
+        }
+
+        .container{
+            max-width:1200px;
+            margin:5rem auto;
+            padding:2rem;
+        }
+
+        .row{
+            display:flex;
+            justify-content: space-between;
+        }
+
+        .hello-wrapper{
+            max-width:800px;
+        }
+
+        .hello-wrapper h2{
+            font-size:2.5rem;
+            font-weight: 100;
+            line-height:1.3em;
+        }
+
+        .handwave{
+            max-width:50px;
+        }
+
+        .profile-pic{
+            border-radius:50%;
+            max-width:300px;
+            transition: all .5s;
+        }
+
+        .profile-pic:hover{
+            transform:scale(1.1);
+        }
+
+        .social-icons i{
+            font-size:1.5rem;
+            padding-right:1rem;
+        }
+
+        .social-icons{
+            margin-bottom: 2rem;
+        }
+
+        .get-in-touch{
+            font-size:1rem !important;
+            display:inline-flex;
+            padding-right:1rem;    
+        }
+
+        .s-purple{
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing:1px;
+            color:purple;
+            font-size:1.3rem;
+        }
+
+        .skills strong{
+            border-bottom:2px solid purple;
+            margin-right:1rem;
+            display:inline-flex;
+        }
+
+        .skills-title{
+            margin-top:4rem;
+        }
+
+
+        .text-center{
+            text-align:center;
+        }
+
+        .resume-btn{
+            background: purple;
+            color: #fff;
+            text-decoration: none;
+            padding: .75rem 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            border-radius: 30px;
+            margin-top: 4rem;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="row">
+    <div class="col hello-wrapper">
+            <h2>Hello! <img class="handwave" src="handwave.gif"></h2>
+            <h2>I'm <strong>Marvellous Michaels</strong>, a full-stack software engineer who has a thing for beautiful interfaces </h2>
+            <p class="social-icons"><span class="s-purple get-in-touch">Get in Touch:</span> <a href="https://www.linkedin.com/in/marvellousubani/" target="_blank"><i class="fa fa-linkedin"></i></a> <a href="https://github.com/MarvellousUbani" target="_blank"><i class="fa fa-github"></i></a> <a target="_blank" href="https://twitter.com/marvelousUbani"><i class="fa fa-twitter"></i></a> </p>
+
+            <p class="s-purple skills-title">SKILLS</p>
+            <p class="skills"><strong>Languages:</strong> JavaScript(ES6), Python, Ruby, HTML5, CSS3</p>
+
+            <p class="skills"><strong>Frameworks:</strong> Ruby on Rails, Django, ReactJS, Node.js, Express.js, jQuery, AJAX, Bootstrap, SASS</p>
+
+            <p class="skills"><strong>Databases:</strong> MongoDB, MySQL, PostgreSQL, SQLite, ActiveRecord</p>
+
+        </div>
+        <div class="col">
+            <img src="https://miro.medium.com/max/3150/2*PqaAYLaw5pGyivg4ZRR0cA.jpeg" class="profile-pic">
+            <a href="https://drive.google.com/file/d/1GvlHWKDKEGBQx3i9mSGux2c4gAPmq9wt/view?usp=sharing" target="_blank" class="resume-btn">Download Resume</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
