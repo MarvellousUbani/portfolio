@@ -1,3 +1,3 @@
-# Version 0 of my portfolio page
+# Version 0 - Portfolio
 
 [Live Link](https://marvellousubani.github.io/portfolio/)
