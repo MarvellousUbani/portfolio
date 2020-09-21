@@ -12,7 +12,7 @@
 
 <body>
     <main class="container">
-        <section class="row" id="about-sec">
+        <section class="row" id="about">
             <div class="col hello-wrapper">
                 <h2>Hello! <img class="handwave" src="handwave.gif"></h2>
                 <h2>I'm <strong>Marvellous Michaels</strong>, a full-stack software engineer who has a thing for
@@ -34,14 +34,91 @@
             </div>
             <div class="col">
                 <img src="https://miro.medium.com/max/3150/2*PqaAYLaw5pGyivg4ZRR0cA.jpeg" class="profile-pic">
-                <a href="https://drive.google.com/file/d/1GvlHWKDKEGBQx3i9mSGux2c4gAPmq9wt/view?usp=sharing"
-                    target="_blank" class="resume-btn">View Resume</a>
+                <a href="https://docs.google.com/document/d/12UFTOVLAOsIfUHRRn04USllaP5guvTEKJPpZ7HeMkq0/edit"
+                    target="_blank" class="resume-btn" aria-label="Opens in a new tab." rel="noreferrer noopener">View
+                    Resume</a>
             </div>
         </section>
-        <section class="row" id="projects-sec">
+        <section id="projects">
+            <h2 class="s-purple skills-title text-center">My Work</h2>
+            <ul class="projects p-0" aria-label="Projects.">
+                <li class="project-item">
+                    <figure class="m-0">
+                        <img src="img/whistelmania.png" alt="Twitter Clone Application">
+                        <figcaption>Twitter Clone Application.</figcaption>
+                    </figure>
+                    <span class="project__technologies">Ruby on Rails, Postgres</span>
+                    <p class="project__links">
+                        <a class="project__livelink" target="_blank" href="https://whistlemania.herokuapp.com/">Live
+                            Link</a>
+                        <a class="project__githublink" target="_blank"
+                            href="https://github.com/MarvellousUbani/whistleapp">Github Repo</a></p>
+                </li>
 
+                <li class="project-item">
+                    <figure class="m-0">
+                        <img src="img/quickpolls.png" alt="Quick Polls Application">
+                        <figcaption>Quick Polls Application.</figcaption>
+                    </figure>
+                    <span class="project__technologies">React, Redux</span>
+                    <p class="project__links">
+                        <a class="project__livelink" target="_blank" href="https://quickpolls.netlify.app/">Live
+                            Link</a>
+                        <a class="project__githublink" target="_blank"
+                            href="https://github.com/MarvellousUbani/quick-polls">Github Repo</a></p>
+
+                </li>
+
+                <li class="project-item">
+                    <figure class="m-0">
+                        <img src="img/facebookclone.png" alt="Facebook Clone Application">
+                        <figcaption>Facebook Clone Application.</figcaption>
+                    </figure>
+                    <span class="project__technologies">Ruby on Rails, Postgres</span>
+                    <p class="project__links">
+                        <a class="project__livelink" target="_blank"
+                            href="https://glacial-peak-70037.herokuapp.com/">Live
+                            Link</a>
+                        <a class="project__githublink" target="_blank"
+                            href="https://github.com/MarvellousUbani/ror-facebook-clone">Github Repo</a></p>
+                </li>
+            </ul>
         </section>
+
+        <section id="contact">
+            <h2 class="s-purple skills-title text-center">CONTACT ME</h2>
+            <p class="text-center"><a class="send__emaillink" href="mailto:marvellousmikez@gmail.com">
+                    <i class="fa fa-envelope"></i> Send a Message
+                </a></p>
+        </section>
+
+
+        <button type="button" aria-label="Open contact menu" aria-controls="contact-menu" aria-expanded="false"
+            class="menu-toggle"></button>
+        <nav id="contact-menu" aria-label="Contact menu" class="">
+            <ul itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" class="cross-site-nav">
+                <li><a href="#about">Home</a></li>
+                <li><a href="#projects">My Work</a></li>
+                <li><a href="#contact">Get in Touch</a></li>
+            </ul>
+        </nav>
     </main>
+
+    <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const contactMenu = document.getElementById("contact-menu");
+        const cmcs = ["open", "shadow"];
+        menuToggle.addEventListener("click", (e) => {
+            if (e.target.classList.contains("x")) {
+                e.target.classList.remove("x");
+                contactMenu.classList.remove(...cmcs);
+            }
+            else {
+                e.target.classList.add("x");
+                contactMenu.classList.add(...cmcs);
+            }
+        });
+    </script>
 </body>
 
 </html>
