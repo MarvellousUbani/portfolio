@@ -327,4 +327,18 @@ section{
         display: none;
     }
 
+    .hello-wrapper h2{
+        font-size: 1.5rem;
+        line-height: 1.5em;
+    }
+
+    .social-icons span{
+        display: none;
+    }
+
+    .project-item{    
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
 }
